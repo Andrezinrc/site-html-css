@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="Pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>site de compras</title>
+  
+  <!-- HTML -->
+  
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  
+  <!--cabecalho-->
+  <header class="cabecalho">
+    <div class="titulo">
+      <h1 class="logo">Oliveira <span class="logo-mobile">Store</span></h1>
+      <input class="pesquisa" type="search" placeholder="  Oque Procura Hoje?">
+      <a><img class="botao-pesquisa" onclick="abrirPesquisa()" src="Img/lupa.png"></a>
+       <a onclick="abrirCarrinho()"><img class="carrinho-img" src="Img/carrinho.png" alt=""></a>
+    </div>
+    
+    
+    <nav class="nav-bar">
+      <div class="hamburguer" onclick="animar()" id="btn-menu">
+        <span class="line"></span>
+        <span class="line"></span>
+        <span class="line"></span>
+      </div>
+  
+      <ul class="menu-desk">
+        <li class="nav-list"><a class="nav-link">Óculos</a ></li>
+        <li class="nav-list"><a class="nav-link">Todas Camisa de Time</a></li>
+        <li class="nav-list"><a class="nav-link">Acessórios - Óculos</a></li>
+      </ul>
+      
+      <ul id="menu" class="menu-mobile">
+        <li class="nav-list"><a class="nav-link">Óculos</a></li>
+        <li class="nav-list"><a class="nav-link">Todas Camisa de Time</a></li>
+        <li class="nav-list"><a class="nav-link">WhatsApp</a></li>
+        <li class="nav-list"><a class="nav-link">Instagram (Óculos)</a></li>
+        <li class="nav-list"><a class="nav-link">Instagram (Camisetas)</a></li>
+        <li class="nav-list"><a class="nav-link">Rastrear Meu Pedido</a></li>
+      </ul>
+      
+      <div id="pqs" class="pesquisa-mobile">
+      <div onclick="abrirPesquisa()"class="busca">
+        <a><img src="Img/close.png"></a>
+        <h2>Busca</h2>
+      </div>
+      
+        <a href=""><input class="pqs-mobile" type="search" placeholder="  O que voce esta buscando?"><img class="lupa" src="Img/lupablack.png" alt=""></a>
+      </div>
+      
+      <div id="car" class="carrinho-mobile">
+      <div onclick="abrirCarrinho()" class="carrinho">
+        <a><img src="Img/close.png"></a>
+        <h2>Carrinho de Compras</h2>
+      </div>
+        <a class="valor">O carrinho de compras está vazio</a>
+      </div>
+
+    </nav>
+  </header>
+  <!--Fim do cabecalho-->
+  
+  <!--conteudo-->
+  <main>
+    <!--Carousel-->
+    <div class="carousel">
+      <div class="container" id="img">
+        <img src="Img/Tenis1.jpeg" alt="">
+        <img src="Img/Tenis2.jpeg" alt="">
+        <img src="Img/Tenis3.jpeg" alt="">
+      </div>
+    </div>
+    <!--Fim do carousel-->
+    
+    <h2 class="titulo-section">TÊNIS MAIS VENDIDOS</h2>
+    <section class="cards">
+      <div class="card">
+        <img src="Img/P1.jpeg" alt="">
+        <p>Este é Top</p>
+        <h2><del>R$199,90</del><strong> R$120,00</strong></h2>
+        <p><strong>12</strong>x de <strong>R$12,16</strong></p>
+        <button>Comprar</button>
+      </div>
+      
+      <div class="card">
+        <img src="Img/P2.jpeg" alt="">
+        <p>Este é Top</p>
+        <h2><del>R$199,90</del><strong> R$120,00</strong></h2>
+        <p><strong>12</strong>x de <strong>R$12,16</strong></p>
+        <button>Comprar</button>
+      </div>
+    
+      <div class="card">
+        <img src="Img/P3.jpeg" alt="">
+        <p>Este é Top</p>
+        <h2><del>R$199,90</del><strong> R$120,00</strong></h2>
+        <p><strong>12</strong>x de <strong>R$12,16</strong></p>
+        <button>Comprar</button>
+      </div>
+    
+      <div class="card">
+        <img src="Img/P4.jpeg" alt="">
+        <p>Este é Top</p>
+        <h2><del>R$199,90</del><strong> R$120,00</strong></h2>
+        <p><strong>12</strong>x de <strong>R$12,16</strong></p>
+        <button>Comprar</button>
+      </div>
+    
+      <div class="card">
+        <img src="Img/P5.jpeg" alt="">
+        <p>Este é Top</p>
+        <h2><del>R$199,90</del><strong> R$120,00</strong></h2>
+        <p><strong>12</strong>x de <strong>R$12,16</strong></p>
+        <button>Comprar</button>
+      </div>
+    
+      <div class="card">
+        <img src="Img/P6.jpeg" alt="">
+        <p>Este é Top</p>
+        <h2><del>R$199,90</del><strong> R$120,00</strong></h2>
+        <p><strong>12</strong>x de <strong>R$12,16</strong></p>
+        <button>Comprar</button>
+      </div>
+    
+      <div class="card">
+        <img src="Img/P1.jpeg" alt="">
+        <p>Este é Top</p>
+        <h2><del>R$199,90</del><strong> R$120,00</strong></h2>
+        <p><strong>12</strong>x de <strong>R$12,16</strong></p>
+        <button>Comprar</button>
+      </div>
+    
+      <div class="card">
+        <img src="Img/P2.jpeg" alt="">
+        <p>Este é Top</p>
+        <h2><del>R$199,90</del><strong> R$120,00</strong></h2>
+        <p><strong>12</strong>x de <strong>R$12,16</strong></p>
+        <button>Comprar</button>
+      </div>
+    
+      <div class="card">
+        <img src="Img/P3.jpeg" alt="">
+        <p>Este é Top</p>
+        <h2><del>R$199,90</del><strong> R$120,00</strong></h2>
+        <p><strong>12</strong>x de <strong>R$12,16</strong></p>
+        <button>Comprar</button>
+      </div>
+    </section>
+    
+    <h2 class="titulo-section">CAMISETAS MAIS VENDIDAS</h2>
+    <section id="camisetas-time" class="cards">
+      <div class="card">
+        <img src="Img/camisa1.jpeg" alt="">
+        <p>Este é Top</p>
+        <h2><del>R$199,90</del><strong> R$120,00</strong></h2>
+        <p><strong>12</strong>x de <strong>R$12,16</strong></p>
+        <button>Comprar</button>
+      </div>
+      
+      <div class="card">
+        <img src="Img/camisa2.jpeg" alt="">
+        <p>Este é Top</p>
+        <h2><del>R$199,90</del><strong> R$120,00</strong></h2>
+        <p><strong>12</strong>x de <strong>R$12,16</strong></p>
+        <button>Comprar</button>
+      </div>
+    
+      <div class="card">
+        <img src="Img/camisa3.jpeg" alt="">
+        <p>Este é Top</p>
+        <h2><del>R$199,90</del><strong> R$120,00</strong></h2>
+        <p><strong>12</strong>x de <strong>R$12,16</strong></p>
+        <button>Comprar</button>
+      </div>
+    
+      <div class="card">
+        <img src="Img/camisa4.jpeg" alt="">
+        <p>Este é Top</p>
+        <h2><del>R$199,90</del><strong> R$120,00</strong></h2>
+        <p><strong>12</strong>x de <strong>R$12,16</strong></p>
+        <button>Comprar</button>
+      </div>
+    
+      <div class="card">
+        <img src="Img/camisa5.jpeg" alt="">
+        <p>Este é Top</p>
+        <h2><del>R$199,90</del><strong> R$120,00</strong></h2>
+        <p><strong>12</strong>x de <strong>R$12,16</strong></p>
+        <button>Comprar</button>
+      </div>
+    
+      <div class="card">
+        <img src="Img/camisa6.jpeg" alt="">
+        <p>Este é Top</p>
+        <h2><del>R$199,90</del><strong> R$120,00</strong></h2>
+        <p><strong>12</strong>x de <strong>R$12,16</strong></p>
+        <button>Comprar</button>
+      </div>
+    
+      <div class="card">
+        <img src="Img/camisa7.jpeg" alt="">
+        <p>Este é Top</p>
+        <h2><del>R$199,90</del><strong> R$120,00</strong></h2>
+        <p><strong>12</strong>x de <strong>R$12,16</strong></p>
+        <button>Comprar</button>
+      </div>
+    
+      <div class="card">
+        <img src="Img/camisa8.jpeg" alt="">
+        <p>Este é Top</p>
+        <h2><del>R$199,90</del><strong> R$120,00</strong></h2>
+        <p><strong>12</strong>x de <strong>R$12,16</strong></p>
+        <button>Comprar</button>
+      </div>
+    
+      <div class="card">
+        <img src="Img/camisa9.jpeg" alt="">
+        <p>Este é Top</p>
+        <h2><del>R$199,90</del><strong> R$120,00</strong></h2>
+        <p><strong>12</strong>x de <strong>R$12,16</strong></p>
+        <button>Comprar</button>
+      </div>
+    </section>
+    
+    <div class="siga-insta">
+      <h2><img src="Img/insta.png" alt=""></h2>
+      <p> Estamos no instagram </p>
+      <a href="">Siga-nos</a>
+    </div>
+
+    <secrion>
+      <div class="pagamento">
+        <ul class="menu">
+          <h2>MENU</h2>
+          <li class="nav-list"><a class="nav-link" href="">Óculos</a></li>
+          <li class="nav-list"><a class="nav-link" href="">Todas Camisa de Time</a></li>
+          <li class="nav-list"><a class="nav-link" href="">WhatsApp</a></li>
+          <li class="nav-list"><a class="nav-link" href="">Instagram (Óculos)</a></li>
+          <li class="nav-list"><a class="nav-link" href="">Instagram (Camisetas)</a></li>
+          <li class="nav-list"><a class="nav-link" href="">Rastrear Meu Pedido</a></li>
+        </ul>
+        
+        <ul class="categoria">
+          <h2>CATEGORIA</h2>
+          <li class="nav-list"><a class="nav-link" href="">Óculos</a></li>
+          <li class="nav-list"><a class="nav-link" href="">Todas Camisa de Time</a></li>
+          <li class="nav-list"><a class="nav-link" href="">Acessórios Óculos</a></li>
+      </ul>
+      </div>
+    </secrion>
+  </main>
+  <!--Fim do conteudo-->
+  
+  
+  <!--incio rodapé-->
+  <footer>
+    
+  </footer>
+  <!--Fim do rodapé-->
+  <script src="main.js"></script>
+</body>
+</html>
