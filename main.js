@@ -19,43 +19,6 @@ function abrirCarrinho(){
   carrinhoCompra.classList.toggle("openCarrinho")
 }
 
-/*
-
-function abrirPesquisa(){
-  
-  if(pqs.style.display == "none"){
-    pqs.style.display = "block";
-  }else{
-    pqs.style.display = "block";
-  }
-}
-
-function fecharPesquisa(){
-  if(pqs.style.display == "block"){
-    pqs.style.display = "none";
-  }else{
-    pqs.style.display = "none";
-  }
-}
-
-function abrirCarrinho(){
-  
-  if(car.style.display == "none"){
-    car.style.display = "block";
-  }else{
-    car.style.display = "block";
-  }
-}
-
-function fecharCarrinho(){
-  if(car.style.display == "block"){
-    car.style.display = "none";
-  }else{
-    car.style.display = "none";
-  }
-}
-*/
-
 const imgs = document.getElementById("img")
 const img = document.querySelectorAll("#img img")
 
