@@ -315,8 +315,9 @@
     text-align: center;
     position: absolute;
     top: 80px;
-    transform: translateX(0);
+    transform: translateY(0);
     transform: translateY(-100%);
+    transition: all 0.8s;
     z-index: -1;
     padding: 12px;
     opacity: 0;
@@ -369,6 +370,7 @@
     position: absolute;
     top: -80px;
     transform: translateX(-100%);
+    transition: all 0.8s;
   }
   
   .openPesquisa{
@@ -418,6 +420,7 @@
     position: absolute;
     top: -80px;
     transform: translateX(100%);
+    transition: all 0.8s;
   }
   
   .openCarrinho{
