@@ -360,6 +360,7 @@
   .card button{
     width: 100px;
     margin-bottom: 5px;
+    border: 0;
   }
   
   .pesquisa-mobile{
